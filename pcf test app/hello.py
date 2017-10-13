@@ -22,6 +22,20 @@ def instance():
 def run(imgPath):
     return 'imagePath - ' + imgPath
 
+@app.route('/upload', methods=['POST'])
+def upload():
+    try:
+        imagefile = flask.request.files.get('imagefile', '')
+	
+	
+@app.route('/get_image')
+def get_image():
+    if request.args.get('type') == '1':
+       filename = 'ok.gif'
+    else:
+       filename = 'error.gif'
+    return send_file(filename, mimetype='image/gif')
+
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=int(port))
