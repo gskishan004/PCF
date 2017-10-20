@@ -1,4 +1,6 @@
 from flask import Flask
+from flask import request
+from PIL import Image
 import os
 import pprint 
 import logging
@@ -24,9 +26,9 @@ def run(imgPath):
 
 @app.route('/upload', methods=['POST'])
 def upload():
-    try:
-        imagefile = flask.request.files.get('imagefile', '')
-	
+	imagefile = Image.open(request.files['file'])
+	imagefile.save("upload.png")
+	return 'Success ! '
 	
 @app.route('/get_image')
 def get_image():
