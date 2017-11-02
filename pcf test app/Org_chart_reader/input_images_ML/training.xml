@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+  <image file='hsbc1.jpg'>
+    <box top='190' left='407' width='194' height='53'/>
+    <box top='268' left='407' width='194' height='57'/>
+    <box top='343' left='113' width='195' height='57'/>
+    <box top='343' left='311' width='197' height='56'/>
+    <box top='342' left='512' width='194' height='60'/>
+    <box top='342' left='719' width='193' height='57'/>
+    <box top='420' left='311' width='198' height='58'/>
+    <box top='421' left='512' width='196' height='55'/>
+  </image>
+</images>
+</dataset>

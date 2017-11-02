@@ -1,0 +1,48 @@
+
+Total number of entitites found = 9
+
+Percentage 50 is associated with Energy Services
+Percentage 49 is associated with BO Unit
+Percentage 51 is associated with AZ Inc
+Percentage 50 is associated with ACT INC
+
+
+Total number of connections = 8
+ITO Ltd
+---------------------------------------- 
+ACT INC
+Energy Services
+
+
+
+GPB Holdings
+---------------------------------------- 
+CSI Cells
+
+
+
+Energy Services
+---------------------------------------- 
+ENRON Ltd
+
+
+
+ACE planning
+---------------------------------------- 
+ITO Ltd
+CSI Cells
+
+
+
+ACT INC
+---------------------------------------- 
+AZ Inc
+
+
+
+BO Unit
+---------------------------------------- 
+ACT INC
+
+
+Number of levels excluding client = 5
