@@ -255,7 +255,8 @@ def main(inp1, inp2):
 
                     else:
                         print text
-                        s = str(text)
+                        text2 = text.encode('utf-8')  
+                        s = str(text2)
                         stext = s.replace('\n', '')
                         cX = (minX + maxX)/2
                         cY = (minY + maxY)/2
