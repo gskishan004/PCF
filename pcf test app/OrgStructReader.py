@@ -482,28 +482,21 @@ def main(inp1, inp2):
             import win32api
 
             if verifySign(image_source):
-                win32api.MessageBox(0, 'Signature Matched', 'Success')
+                print "signature matched"
+                # win32api.MessageBox(0, 'Signature Matched', 'Success')
 
             else:
-                win32api.MessageBox(0, 'Signature Not Matched', 'Warning')
-                sys.exit()
+                return 0
+                # win32api.MessageBox(0, 'Signature Not Matched', 'Warning')
+
 
             rects = find_rects(img)
-            # print "before removing duplicate ",len(rects)
-            # img = cv2.imread(image_source)
-            # cv2.drawContours(img, rects, -1, (0,255,0), 3)
-            # cv2.imwrite('qwwe1.jpg', img)
 
             uniq_rects = find_unique_rects(rects)
-            # print "after removing duplicate ",len(uniq_rects)
-            # img = cv2.imread(image_source)
-            # cv2.drawContours(img, rects, -1, (0,255,255), 3)
-            # cv2.imwrite('qwwe2.jpg', img)
 
             makeVFCRect_Dict(uniq_rects)
 
             vfc = removeRectInsideOther(uniq_rects)
-            #print "before removing empty ",len(vfc)
 
 
             print "............ Start finding rectangles ..............."
@@ -554,8 +547,6 @@ def main(inp1, inp2):
 
             parentChildDict = find_paths(uniq_vfc,dict_centre_vert,uniq_centres,image_source, clientCentre, dict_centre_text,f)
 
-
-            # In[ ]:
-
+            return 1
 
 

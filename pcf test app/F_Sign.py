@@ -108,7 +108,7 @@ def verifySign(doc):
 	if min>54:
 		print "Signature found in the Document ",doc," and it matches with ",bestMatchImg 
 		per,img= findSimilarityBW(doc,bestMatchImg)
-		plt.imshow(img, 'gray'),plt.show()
+		#plt.imshow(img, 'gray'),plt.show()
 		return True
 
 	else:
