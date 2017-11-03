@@ -482,7 +482,7 @@ def main(inp1, inp2):
             import win32api
 
             if verifySign(image_source):
-                print "signature matched"
+                print "signature"
                 # win32api.MessageBox(0, 'Signature Matched', 'Success')
 
             else:

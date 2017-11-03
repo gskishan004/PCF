@@ -12,7 +12,7 @@ import requests
 import re
 
 ENDPOINT_URL = 'https://vision.googleapis.com/v1/images:annotate'
-api_key = "AIzaSyB-ToYyW9OqyposPWp8dgtpi1lqwTwb5p8"
+api_key = "AIzaSyDwht6-CgRR2tLf-KJgnVMviStIchlNBgc"
 dict_vert_perc=dict()
 
 def make_image_data_list(image_filenames):
